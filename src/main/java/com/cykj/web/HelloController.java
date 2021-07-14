@@ -47,7 +47,7 @@ public class HelloController {
         List<Menu> menu = adminService.getMenu();
         ReturnMsg getMenu = new ReturnMsg();
         System.out.println("--"+menu);
-        getMenu.setType("200");
+        getMenu.setType("2000");
         getMenu.setMenu(menu);
         String msg = JSON.toJSONString(getMenu);
         return msg;
