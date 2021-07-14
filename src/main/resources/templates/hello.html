@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<h1>你好，Spring Boot</h1>
+<form action="/admin/toLog" method="post">
+    <input type="text" placeholder="账号"/>
+    <input type="password" placeholder="密码"/>
+    <input type="button" value="登录" id="btn"/>
+</form>
+<input type="button" value="ajax" id="ajaxBtn">
+</body>
+</html>
+<script type="text/javascript">
+    $('#ajaxBtn').click(function () {
+        $.ajax({
+            url: '/admin/toLog',
+            method: 'post',
+            data: {username: 'Roy', pwd: '123456'},
+            dataType: 'text',
+            success: function (data) {
+                console.log(data)
+            },
+        })
+    })
+</script>
+
