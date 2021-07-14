@@ -52,4 +52,8 @@ public class HelloController {
         String msg = JSON.toJSONString(getMenu);
         return msg;
     }
+//    得到用户列表
+    public String getUserList(){
+        return null;
+    }
 }
