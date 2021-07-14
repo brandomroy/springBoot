@@ -52,8 +52,10 @@ public class HelloController {
         String msg = JSON.toJSONString(getMenu);
         return msg;
     }
-//    得到用户列表
+//    得到用户列表dfadfa
     public String getUserList(){
+
         return null;
+
     }
 }
